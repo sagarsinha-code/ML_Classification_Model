@@ -12,7 +12,7 @@ Source: [UCI Dry Bean dataset](https://archive.ics.uci.edu/dataset/602/dry+bean+
 
 ## c. GitHub Repository Link
 
-Add the public repository URL here after creating and pushing this project: **[Add your GitHub repository URL]**.
+Add the public repository URL here after creating and pushing this project: **https://github.com/sagarsinha-code/ML_Classification_Model**.
 
 ## d. Models used and evaluation metrics
 
@@ -74,14 +74,3 @@ model/*.joblib         Five fitted model pipelines
 model/metadata.json    Feature names, labels, and test metrics
 ```
 
-## Deploy to Streamlit Community Cloud
-
-1. Create a GitHub repository and push this folder with the files above.
-2. Open Streamlit Community Cloud, sign in with GitHub, and create an app from the repository.
-3. Select the branch and `app.py`, then deploy.
-4. Open the deployed URL and test the default holdout data and a CSV upload.
-5. Replace the repository-link placeholder above with the real URL. Record the live app URL and add the screenshot from your BITS Virtual Lab session to your final PDF.
-
-## Reproducibility and academic use
-
-The split is stratified and deterministic (`random_state=42`). The model pipelines perform preprocessing at fit time using only the training partition. Uploaded test rows are used only for prediction and evaluation. Review the implementation, rerun it, compare model behavior, and write your own final observations before submission.
